@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Gilroy Bold";
+    src: url("fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/Gilroy-Light.otf");
+}
+
+* {
+    font-family: "Gilroy", sans-serif;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background: rgb(255,0,220);
+    background: -moz-linear-gradient(135deg, rgba(255,0,220,1) 0%, rgba(0,241,255,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(255,0,220,1) 0%, rgba(0,241,255,1) 100%);
+    background: linear-gradient(135deg, rgba(255,0,220,1) 0%, rgba(0,241,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff00dc",endColorstr="#00f1ff",GradientType=1);
+}
+
+main:first-child > section > h1 {
+    font-family: "Gilroy Bold", sans-serif;
+}
+
+#navbar {
+    background: rgba(255, 255, 255, .2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: .3s;
+}
+
+#navbar.moved {
+    background: rgba(255, 255, 255, .8);
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    border-radius: 0 0 15px 15px;
+    transition: .3s;
+}
+
+#navbar.moved a {
+    color: black;
+}
+
+main:first-child > section > nav ul a:hover {
+    background: rgba(255, 255, 255, .5);
+}
+
+#second {
+    background: #ecf0f1;
+}
+
+#second > h2 {
+    font-family: "Gilroy Bold";
+}
