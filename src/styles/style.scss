@@ -337,6 +337,35 @@ html {
               display: inline-block;
               margin-left: 1rem;
             }
+
+            .progressBarContainer {
+              margin-top: .5rem;
+              margin-bottom: 1rem;
+              display: flex;
+              justify-content: space-between;
+              background: #d8d8d8;
+              border-radius: 8px;
+
+              .progressBar {
+                width: 100%;
+                height: .5rem;
+                background: #2ecc71;
+                border-radius: 8px;
+                transition: .2s;
+
+                &[data-progress="0"] {
+                  background: #e74c3c;
+                }
+
+                &[data-progress="1"] {
+                  background: #f1c40f;
+                }
+
+                &[data-progress="2"] {
+                  background: #2ecc71;
+                }
+              }
+            }
           }
         }
       }
