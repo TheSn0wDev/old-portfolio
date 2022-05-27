@@ -1,9 +1,12 @@
 import * as React from 'react'
 import OSWindowHeader from "./OSWindowHeader";
 import OSWindowNavbar from "./OSWindowNavbar";
+import Draggable from "react-draggable";
 
 const OSWindow = (props) => {
-    return (<div data-show={false} id={props.id} className={"OSWindow"}>
+
+    return (<Draggable handle={".OSWindowHeader"}>
+        <div data-show={false} id={props.id} className={"OSWindow"} >
             <OSWindowHeader id={props.id} />
             <OSWindowNavbar title={"About"}>
                 {props.navbar}
@@ -11,7 +14,8 @@ const OSWindow = (props) => {
             <div className={"OSWindowContent"}>
                 {props.children}
             </div>
-        </div>)
+        </div>
+    </Draggable>)
 }
 
 export default OSWindow

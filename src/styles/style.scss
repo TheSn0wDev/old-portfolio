@@ -76,6 +76,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
     #OSHeader {
       background: #EBEBEC;
@@ -178,23 +179,23 @@ html {
       width: 55vw;
       aspect-ratio: 16/9;
       position: absolute;
-      top: calc(50% - 35px);
-      left: 50%;
-      transform: translate(-50%, -50%) !important;
+      top: calc(15% - 35px);
+      left: 5%;
+      transform: translate(-50%, -50%);
       border-radius: .75rem;
       z-index: 1;
       overflow: hidden;
 
       &[data-show="false"] {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(.7) !important;
+        transform: translate(-50%, -50%) scale(.7);
         z-index: -1;
         transition: .1s ease-out;
       }
 
       &[data-show="true"] {
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1) !important;
+        transform: translate(-50%, -50%) scale(1);
         transition: .1s ease-out;
       }
 
@@ -202,6 +203,7 @@ html {
         display: flex;
         justify-content: flex-end;
         padding: .5rem;
+        cursor: move;
 
         svg {
           font-size: 1rem;

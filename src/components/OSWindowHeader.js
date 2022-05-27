@@ -3,7 +3,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTimes} from "@fortawesome/free-solid-svg-icons";
 
 const OSWindowHeader = (props) => {
-
     const closePopup = () => {
         const el = document.getElementById(props.id);
 
@@ -11,7 +10,7 @@ const OSWindowHeader = (props) => {
     }
 
     return (<div className={"OSWindowHeader"}>
-        <FontAwesomeIcon onClick={closePopup} icon={faTimes}/>
+        <FontAwesomeIcon onClick={closePopup} icon={faTimes} />
     </div>);
 }
 

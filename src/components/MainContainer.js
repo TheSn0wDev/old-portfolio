@@ -9,7 +9,7 @@ import OSTab from "./OSTab";
 const MainContainer = () => {
     return (<>
         <OSHeader />
-        <h1 id={"backgroundTitle"}>ClementOS</h1>
+        <h1 id={"backgroundTitle"}>ClémentOS</h1>
         <OSNavbar />
         <OSWindow id={"about"} navbar={<>
             <NavbarCategory title={"Main"}/>
