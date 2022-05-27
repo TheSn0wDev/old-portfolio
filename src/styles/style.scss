@@ -27,15 +27,35 @@
 $title: 'Whitney Bold';
 $subtitle: 'Whitney Medium';
 $body: 'Whitney Light';
-$titleSize: '2.5rem';
-$subtitleSize: '1.5rem';
-$bodySize: '1.5rem';
+$titleSize: 2.5rem;
+$subtitleSize: 1.5rem;
+$bodySize: 1rem;
 
 * {
+  color: #2d3436;
   margin: 0;
   padding: 0;
   font-family: $body, sans-serif;
   font-size: $bodySize;
+  user-select: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #bcb6be #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bcb6be;
+  border-radius: 10px;
+  border: 2px solid #fff;
 }
 
 html {
@@ -82,7 +102,6 @@ html {
       font-size: 100pt;
       font-family: $title, sans-serif;
       text-shadow: 0 0 40px rgba(255, 255, 255, .7);
-      user-select: none;
     }
 
     #OSNavbar {
@@ -156,7 +175,7 @@ html {
 
     .OSWindow {
       background: rgba(255, 255, 255, .7);
-      height: 65vh;
+      width: 55vw;
       aspect-ratio: 16/9;
       position: absolute;
       top: calc(50% - 35px);
@@ -169,6 +188,7 @@ html {
       &[data-show="false"] {
         opacity: 0;
         transform: translate(-50%, -50%) scale(.7) !important;
+        z-index: -1;
         transition: .1s ease-out;
       }
 
@@ -195,6 +215,74 @@ html {
           &:hover {
             background: #e85148;
             transition: .15s linear;
+          }
+        }
+      }
+
+      .OSWindowNavbar {
+        background: rgba(255, 255, 255, .7);
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: .5rem .75rem;
+
+        .OSWindowTitle {
+          font-family: $title, sans-serif;
+          font-size: 1.25rem;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        .NavbarCategory {
+          color: #AEAEB1;
+          font-size: $bodySize;
+          font-family: $subtitle, sans-serif;
+          margin-top: 1rem;
+        }
+
+        .NavbarLink {
+          margin-top: .5rem;
+          padding: .5rem .75rem;
+          background: blue;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: .2s;
+
+          &[data-active="true"] {
+            background: #3287FF;
+            color: #fff;
+            font-family: 'Whitney Semibold', sans-serif;
+          }
+
+          &[data-active="false"] {
+            background: transparent;
+            color: #2d3436;
+
+            &:hover {
+              background: #60a1ff;
+              color: #fff;
+              transition: .2s;
+            }
+          }
+        }
+      }
+
+      .OSWindowContent {
+        height: calc(100% - 42px);
+
+        .OSWindowTab {
+          height: 100%;
+          padding-left: calc(25% + 2.25rem);
+          overflow-y: scroll;
+
+          &[data-show="true"] {
+            display: block;
+          }
+
+          &[data-show="false"] {
+            display: none;
           }
         }
       }
