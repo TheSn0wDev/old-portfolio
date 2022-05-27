@@ -8,7 +8,7 @@ const OSWindow = (props) => {
     return (<Draggable handle={".OSWindowHeader"}>
         <div data-show={false} id={props.id} className={"OSWindow"} >
             <OSWindowHeader id={props.id} />
-            <OSWindowNavbar title={"About"}>
+            <OSWindowNavbar title={props.title}>
                 {props.navbar}
             </OSWindowNavbar>
             <div className={"OSWindowContent"}>

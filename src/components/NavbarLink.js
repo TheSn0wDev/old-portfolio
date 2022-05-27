@@ -1,4 +1,5 @@
 import * as React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const NavbarLink = (props) => {
 
@@ -21,6 +22,7 @@ const NavbarLink = (props) => {
     }
 
     return (<p className={"NavbarLink"} data-active={props.active} onClick={(e) => handleClick(e)}>
+        <FontAwesomeIcon icon={props.icon} style={{marginRight: ".5rem"}} />
         {props.title}
     </p>);
 }
