@@ -290,6 +290,7 @@ const MainContainer = () => {
 
             <NavbarCategory title={"Jeux vidéos"}/>
             <NavbarLink title={"My RPG"} toOpen={"my-rpg"} active={"false"} window={"projects"}/>
+            <NavbarLink title={"Atlantique RP"} toOpen={"arp"} active={"false"} window={"projects"}/>
         </>} >
             <OSTab id={"tab-ekalia"} >
                 <div className={"contentContainer"}>
@@ -372,7 +373,7 @@ const MainContainer = () => {
                     <h5>Durée de la mission</h5>
 
                     <p>
-                        Je suis rentré dans l'équipe de Next Citizens en mai 2022 et suis actuellement toujours dans cette équipe.
+                        Je suis rentré dans l'équipe de Next Citizens en mai 2022 et suis toujours dans cette équipe.
                     </p>
                 </div>
             </OSTab>
@@ -402,8 +403,87 @@ const MainContainer = () => {
                     </p>
                 </div>
             </OSTab>
+            <OSTab id={"tab-arp"} >
+                <div className={"contentContainer"}>
+                    <h5>Atlantique RolePlay</h5>
+
+                    <p>
+                        <a href={"https://atlantique-rp.fr/"} target={"_blank"}>Atlantique RP</a> est un serveur <b>FiveM</b>, dont l'histoire se déroule sur les
+                        îles d'Aix et d'Olérons.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+
+                    <p>
+                        En tant que leader du pôle développement, je dois gérer le développement du serveur, des sites web ainsi que de
+                        toutes les infrastructures nécessaires.<br/>
+                        En parrallèle, je suis chargé de développer les scripts FiveM en LUA, grâce au framework <b>QBCore</b>.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Durée de la mission</h5>
+
+                    <p>
+                        Je suis rentré dans l'équipe d'Atlantique RP en janvier 2022 et suis actuellement dedans.
+                    </p>
+                </div>
+            </OSTab>
         </OSWindow>
-        <OSWindow title={"Expériences"} id={"experiences"}/>
+        <OSWindow title={"Expériences"} id={"experiences"} navbar={<>
+            <NavbarCategory title={"Jobs d'été"}/>
+            <NavbarLink title={"Leclerc"} toOpen={"leclerc"} active={"true"} window={"experiences"}/>
+
+            <NavbarCategory title={"Stages"}/>
+            <NavbarLink title={"AZEOO"} toOpen={"azeoo"} active={"false"} window={"experiences"}/>
+        </>}>
+            <OSTab id={"tab-leclerc"} >
+                <div className={"contentContainer"}>
+                    <h5>Leclerc - Alès</h5>
+                    <p>
+                        En 2020, j'ai pu découvrir le monde professionnel pendant 1 mois et demi.
+                    </p>
+                </div>
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+                    <p>
+                        J'étais dans une petite équipe de 4 personnes, s'occupant de la mise en rayon des produits surgelés.
+                        Il fallait être rigoureux afin que les stocks soient toujours surgelés, même sortis du congélateur.
+                    </p>
+                </div>
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+                    <p>
+                        J'étais dans une petite équipe de 4 personnes, s'occupant de la mise en rayon des produits surgelés.
+                        Il fallait être rigoureux afin que les stocks soient toujours surgelés, même sortis du congélateur.
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-azeoo"} >
+                <div className={"contentContainer"}>
+                    <h5>AZEOO - Montpellier, télétravail</h5>
+                    <p>
+                        En 2021, j'ai eu l'occasion de travailler pour la première fois dans une start-up innovante en tant que <b>développeur web</b>.
+                    </p>
+                </div>
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+                    <p>
+                        En tant que développeur web, j'étais charger de la refonte du site vitrine d'<b>AZEOO</b>.
+                        J'ai utilisé le célèbre CMS <b>Wordpress</b> avec le plugin <b>Elementor</b>, afin de stylisé les pages.
+                        J'ai aussi pu découvrir la suite <b>Atlassian</b>, notamment Confluence afin de créer des pages de documentation.
+                    </p>
+                </div>
+                <div className={"contentContainer"}>
+                    <h5>Durée de la mission</h5>
+                    <p>
+                        J'ai travaillé pendant 6 mois, de juillet à décembre 2021. Ce stage a été réalisé en fin de première année à <b>{epitech}</b>
+                    </p>
+                </div>
+            </OSTab>
+        </OSWindow>
         <OSWindow title={"Contact"} id={"contact"}/>
     </>);
 }
