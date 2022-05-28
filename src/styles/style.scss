@@ -114,6 +114,7 @@ html {
       padding: 1rem 2rem;
       border-radius: 1rem;
       display: flex;
+      z-index: 999;
 
       .NavbarIcon {
         background: #C4C4C4;
@@ -197,6 +198,7 @@ html {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
         transition: .1s ease-out;
+        z-index: 1;
       }
 
       .OSWindowHeader {

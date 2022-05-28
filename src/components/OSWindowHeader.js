@@ -7,6 +7,7 @@ const OSWindowHeader = (props) => {
         const el = document.getElementById(props.id);
 
         el.dataset.show = "false";
+        el.style.zIndex = "-1";
     }
 
     return (<div className={"OSWindowHeader"}>
