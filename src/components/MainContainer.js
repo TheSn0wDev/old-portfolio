@@ -5,6 +5,8 @@ import OSWindow from "./OSWindow";
 import NavbarCategory from "./NavbarCategory";
 import NavbarLink from "./NavbarLink";
 import OSTab from "./OSTab";
+import background from "../images/background.jpg";
+
 import {
     faAlignLeft, faBrush,
     faCubes,
