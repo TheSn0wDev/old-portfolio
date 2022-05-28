@@ -14,6 +14,8 @@ import {
     faTerminal
 } from "@fortawesome/free-solid-svg-icons";
 
+const epitech = "{EPITECH}";
+
 const qualifications = [
     {
         title: "Diplôme national du brevet - Collège Léo Larguier, La Grand-Combe",
@@ -54,7 +56,6 @@ const MainContainer = () => {
             </div>
         );
     }
-
 
     return (<>
         <OSHeader />
@@ -110,6 +111,11 @@ const MainContainer = () => {
                     </div>
 
                     <h5>SCSS</h5>
+                    <div className={"progressBarContainer"}>
+                        <div className={"progressBar"} style={{width: "70%"}}/>
+                    </div>
+
+                    <h5>Twig</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "70%"}}/>
                     </div>
@@ -277,11 +283,126 @@ const MainContainer = () => {
             </OSTab>
         </OSWindow>
         <OSWindow title={"Projets"} id={"projects"} navbar={<>
-            <NavbarCategory title={"Main"}/>
-            <NavbarLink title={"Studies"} toOpen={"about"} active={"true"} window={"projects"}/>
-            <NavbarLink title={"Studies"} toOpen={"about"} active={"false"} window={"projects"}/>
-            <NavbarLink title={"Studies"} toOpen={"about"} active={"false"} window={"projects"}/>
-        </>}/>
+            <NavbarCategory title={"Web"}/>
+            <NavbarLink title={"Ekalia"} toOpen={"ekalia"} active={"true"} window={"projects"}/>
+            <NavbarLink title={"Skytale"} toOpen={"skytale"} active={"false"} window={"projects"}/>
+            <NavbarLink title={"Next Citizens"} toOpen={"next-citizens"} active={"false"} window={"projects"}/>
+
+            <NavbarCategory title={"Jeux vidéos"}/>
+            <NavbarLink title={"My RPG"} toOpen={"my-rpg"} active={"false"} window={"projects"}/>
+        </>} >
+            <OSTab id={"tab-ekalia"} >
+                <div className={"contentContainer"}>
+                    <h5>Ekalia</h5>
+
+                    <p>
+                        <a href={"https://ekalia.fr/"} target={"_blank"}>Ekalia</a> est un groupe d'organisation d'événements.
+                        Fondé en 2011, ils ont réalisé de nombreux événements et réuni des milliers de participants.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+
+                    <p>
+                        Ma mission chez Ekalia était de développer le site web de l'association.
+                        Je faisais partie de l'équipe de développement front-end.
+                        Nous avons utilisé le framework <b>Symfony</b> pour le back-end. J'ai donc dû codé le site web en <b>Twig</b>.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Durée de la mission</h5>
+
+                    <p>
+                        J'ai travaillé bénévolement chez Ekalia pendant 1 an et demi. J'ai d'abord travaillé sur une première version,
+                        qui a été annulé pour passer à la version 2.0, reprenant une nouvelle architecture ainsi que la mise en place du
+                        framework <b>Symfony</b>.
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-skytale"} >
+                <div className={"contentContainer"}>
+                    <h5>Skytale</h5>
+
+                    <p>
+                        <a href={"https://skytale.fr/"} target={"_blank"}>Skytale</a> est une association loi 1901 fondée en février
+                        2019 composée d'une quarantaine de membres passionnés aux compétences variées.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+
+                    <p>
+                        Ma mission chez Skytale était de développer le site web.
+                        Comme chez Ekalia, je faisais partie de l'équipe de développement front-end.
+                        Pour la première version, nous avons utilisé du HTML, du CSS et du Javascript vanilla.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Durée de la mission</h5>
+
+                    <p>
+                        J'ai travaillé bénévolement chez Skytale un peu moins d'1 an.
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-next-citizens"} >
+                <div className={"contentContainer"}>
+                    <h5>Next Citizens Framework</h5>
+
+                    <p>
+                        <a href={"https://nextcitizens.net/"} target={"_blank"}>Next Citizens</a> est un framework open-source simple et optimisé
+                        afin de développer des serveurs pour le jeu <b>FiveM</b>.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+
+                    <p>
+                        Ma mission chez Next Citizens est de développer le site vitrine du projet.
+                        Je développe le site grâce au framework NextJS qui propose de très bonnes performances.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Durée de la mission</h5>
+
+                    <p>
+                        Je suis rentré dans l'équipe de Next Citizens en mai 2022 et suis actuellement toujours dans cette équipe.
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-my-rpg"} >
+                <div className={"contentContainer"}>
+                    <h5>My RPG</h5>
+
+                    <p>
+                        My_RPG est un projet que l'on doit réaliser en fin de première année à <b>{epitech}</b>.
+                        Le but est de créer un jeu complet, de type RPG, en utilisant la librairie <b>CSFML</b>.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Repo Github</h5>
+
+                    <p>
+                        Vous pouvez retrouvez le code du projet <a href={"https://github.com/Sn00ww/my_rpg"} target={"_blank"}>ici</a>.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Durée du projet</h5>
+
+                    <p>
+                        La durée du projet était d'environ 1 mois.
+                    </p>
+                </div>
+            </OSTab>
+        </OSWindow>
         <OSWindow title={"Expériences"} id={"experiences"}/>
         <OSWindow title={"Contact"} id={"contact"}/>
     </>);
