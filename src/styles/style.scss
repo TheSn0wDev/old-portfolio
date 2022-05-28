@@ -1,28 +1,27 @@
 @font-face {
   font-family: 'Whitney Book';
-  src: url("/static/fonts/whitneybook.otf") format("opentype");
+  src: url("../fonts/whitneybook.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Whitney Medium';
-  src: url("/static/fonts/whitneymedium.otf") format("opentype");
+  src: url("../fonts/whitneymedium.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Whitney Bold';
-  src: url("/static/fonts/whitneybold.otf") format("opentype");
+  src: url("../fonts/whitneybold.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Whitney Light';
-  src: url("/static/fonts/whitneylight.otf") format("opentype");
+  src: url("../fonts/whitneylight.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Whitney Semibold';
-  src: url("/static/fonts/whitneysemibold.otf") format("opentype");
+  src: url("../fonts/whitneysemibold.otf") format("opentype");
 }
-
 
 $title: 'Whitney Bold';
 $subtitle: 'Whitney Medium';
@@ -70,7 +69,7 @@ html {
   }
 
   body {
-    background: url("/static/images/background.jpg") center center no-repeat;
+    background: url("../images/background.jpg") center center no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
