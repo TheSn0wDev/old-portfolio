@@ -447,7 +447,7 @@ const MainContainer = () => {
                     </p>
                 </div>
                 <div className={"contentContainer"}>
-                    <h5>Ma mission</h5>
+                    <h5>Travail réalisé</h5>
                     <p>
                         J'étais dans une petite équipe de 4 personnes, s'occupant de la mise en rayon des produits surgelés.
                         Il fallait être rigoureux afin que les stocks soient toujours surgelés, même sortis du congélateur.
