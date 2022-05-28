@@ -484,7 +484,61 @@ const MainContainer = () => {
                 </div>
             </OSTab>
         </OSWindow>
-        <OSWindow title={"Contact"} id={"contact"}/>
+        <OSWindow title={"Contact"} id={"contact"} navbar={<>
+            <NavbarCategory title={"Réseaux sociaux"}/>
+            <NavbarLink title={"Discord"} toOpen={"discord"} active={"true"} window={"contact"}/>
+            <NavbarLink title={"LinkedIn"} toOpen={"linkedin"} active={"false"} window={"contact"}/>
+            <NavbarLink title={"Twitter"} toOpen={"twitter"} active={"false"} window={"contact"}/>
+
+            <NavbarCategory title={"Autres"}/>
+            <NavbarLink title={"Perso"} toOpen={"perso"} active={"false"} window={"contact"}/>
+        </>}>
+            <OSTab id={"tab-discord"} >
+                <div className={"contentContainer"}>
+                    <h5>Mon serveur</h5>
+                    <p>
+                        Vous pouvez rejoindre mon serveur Discord à cette adresse <a href={"https://discord.gg/XqntKQ2JP7"} target={"_blank"}>https://discord.gg/XqntKQ2JP7</a>.
+                    </p>
+                </div>
+                <div className={"contentContainer"}>
+                    <h5>Compte Discord</h5>
+                    <p>
+                        Vous pouvez aussi m'ajouter sur Discord: <b>Sn0w#8638</b>
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-linkedin"} >
+                <div className={"contentContainer"}>
+                    <h5>Compte LinkedIn</h5>
+                    <p>
+                        Suivez-moi sur mon compte <a href={"https://www.linkedin.com/in/clement-ozor/"} target={"_blank"}>LinkedIn</a>.
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-twitter"} >
+                <div className={"contentContainer"}>
+                    <h5>Compte Twitter</h5>
+                    <p>
+                        Suivez-moi sur mon compte <a href={"https://twitter.com/Sn0wDev__"} target={"_blank"}>Twitter</a>.
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-perso"} >
+                <div className={"contentContainer"}>
+                    <h5>Adresse mail Pro</h5>
+                    <p>
+                        Si vous souhaitez me contacter par mail: <a href={"mailto:clement.ozor@protonmail.com"}>clement.ozor@protonmail.com</a>.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Adresse mail étudiante</h5>
+                    <p>
+                        Voici ma deuxième adresse mail: <a href={"mailto:clement.ozor@epitech.eu"}>clement.ozor@epitech.eu</a>.
+                    </p>
+                </div>
+            </OSTab>
+        </OSWindow>
     </>);
 }
 
