@@ -317,7 +317,7 @@ const MainContainer = () => {
 
                     <p>
                         J'ai travaillé bénévolement chez Ekalia pendant 1 an et demi. J'ai d'abord travaillé sur une première version,
-                        qui a été annulé pour passer à la version 2.0, reprenant une nouvelle architecture ainsi que la mise en place du
+                        qui a été annulée pour passer à la version 2.0, reprenant une nouvelle architecture ainsi que la mise en place du
                         framework <b>Symfony</b>.
                     </p>
                 </div>
@@ -409,7 +409,7 @@ const MainContainer = () => {
 
                     <p>
                         <a href={"https://atlantique-rp.fr/"} target={"_blank"}>Atlantique RP</a> est un serveur <b>FiveM</b>, dont l'histoire se déroule sur les
-                        îles d'Aix et d'Olérons.
+                        îles d'Aix et d'Oléron.
                     </p>
                 </div>
 
