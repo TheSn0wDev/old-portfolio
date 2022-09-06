@@ -11,7 +11,7 @@ It is simply my portfolio. I talk about my life, my projects, my experiences, et
 
 ## Technical
 
-I built my portfolio with only HTML, CSS and vanilla JS. I'm working on a second version, fully interactive with ReactJS. It's coming soon...
+I built my portfolio with ReactJS. I'm working on a new version, more professional. It's coming soon...
 
 ## Author
 
